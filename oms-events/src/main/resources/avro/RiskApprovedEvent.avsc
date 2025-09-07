@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "RiskApprovedEvent",
+  "namespace": "com.adarsh.oms.oms_events.avro",
+  "fields": [
+    { "name": "orderId", "type": "long" },
+    { "name": "approved", "type": "boolean" },
+    { "name": "reason", "type": "string" },
+    { "name": "timestamp", "type": "long" }
+  ]
+}

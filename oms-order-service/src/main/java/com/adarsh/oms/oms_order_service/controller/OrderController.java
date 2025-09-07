@@ -44,6 +44,7 @@ public class OrderController {
             // Directly throw — no global handler
             throw ex;
         } catch (Exception ex) {
+            ex.printStackTrace();
             throw new OmsServiceException("Unexpected error while placing order", "UNEXPECTED_ERROR");
         }
     }

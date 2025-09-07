@@ -9,30 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
-        <module name="oms-api-gateway" />
         <module name="oms-market-data" />
         <module name="oms-risk-service" />
-        <module name="oms-admin-service" />
-      </profile>
-      <profile name="Annotation profile for oms-core" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
-        </processorPath>
-        <module name="oms-core" />
-      </profile>
-      <profile name="Annotation profile for oms-order-service" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
-        </processorPath>
         <module name="oms-order-service" />
+        <module name="oms-events" />
+        <module name="oms-admin-service" />
+        <module name="oms-core" />
+        <module name="oms-api-gateway" />
       </profile>
     </annotationProcessing>
   </component>

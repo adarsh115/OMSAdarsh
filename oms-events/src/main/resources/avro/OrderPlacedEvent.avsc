@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "OrderPlacedEvent",
+  "namespace": "com.adarsh.oms.oms_events.avro",
+  "fields": [
+    { "name": "orderId", "type": "long" },
+    { "name": "userId", "type": "long" },
+    { "name": "symbol", "type": "string" },
+    { "name": "side", "type": "string" },
+    { "name": "orderType", "type": "string" },
+    { "name": "quantity", "type": "int" },
+    { "name": "price", "type": "double" },
+    { "name": "clientOrderId", "type": "string" },
+    { "name": "timestamp", "type": "long" }
+  ]
+}
+
