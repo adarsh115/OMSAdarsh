@@ -3,9 +3,20 @@
   "name": "RiskApprovedEvent",
   "namespace": "com.adarsh.oms.oms_events.avro",
   "fields": [
-    { "name": "orderId", "type": "long" },
-    { "name": "approved", "type": "boolean" },
-    { "name": "reason", "type": "string" },
-    { "name": "timestamp", "type": "long" }
-  ]
+  { "name": "orderId", "type": "long" },
+    { "name": "clientOrderId", "type": "string", "default": "" },
+  { "name": "approved", "type": "boolean" },
+  {
+    "name": "riskStatus",
+    "type": {
+      "type": "enum",
+      "name": "RiskStatus",
+      "symbols": ["APPROVED", "REJECTED", "PENDING"]
+    },
+    "default": "PENDING"
+  },
+  { "name": "reason", "type": "string" },
+  { "name": "timestamp", "type": "long" }
+]
+
 }

@@ -2,6 +2,8 @@ package com.adarsh.oms.oms_order_service.dto;
 
 import com.adarsh.oms.oms_order_service.enums.OrderSide;
 import com.adarsh.oms.oms_order_service.enums.OrderStatus;
+import com.adarsh.oms.oms_order_service.enums.OrderType;
+import com.adarsh.oms.oms_order_service.enums.RiskStatus;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -20,6 +22,9 @@ public class OrderResponseDto {
 
     private String clientOrderId;
 
+    @NotNull(message = "Order type must not be null")
+    private OrderType orderType;
+
     @NotBlank(message = "Symbol must not be blank")
     private String symbol;
 
@@ -36,6 +41,8 @@ public class OrderResponseDto {
 
     @NotNull(message = "Order status is required")
     private OrderStatus status;
+
+    private RiskStatus riskStatus;
 
     @NotBlank(message = "Message must not be blank")
     private String message;

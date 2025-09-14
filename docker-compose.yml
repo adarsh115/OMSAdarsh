@@ -42,6 +42,18 @@ services:
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
       SCHEMA_REGISTRY_HOST_NAME: schema-registry
 
+#  oms-risk-service:
+#    build:
+#      context: ./rust-services/oms-risk-service
+#    image: oms-risk-service:latest
+#    depends_on:
+#      - kafka
+#      - schema-registry
+#    environment:
+#      - KAFKA_BROKER=kafka:29092
+#      - SCHEMA_REGISTRY_URL=http://schema-registry:8081
+
+
 
 
   prometheus:

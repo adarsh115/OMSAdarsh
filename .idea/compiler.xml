@@ -15,8 +15,8 @@
         <module name="oms-order-service" />
         <module name="oms-events" />
         <module name="oms-admin-service" />
-        <module name="oms-core" />
         <module name="oms-api-gateway" />
+        <module name="oms-core" />
       </profile>
     </annotationProcessing>
   </component>

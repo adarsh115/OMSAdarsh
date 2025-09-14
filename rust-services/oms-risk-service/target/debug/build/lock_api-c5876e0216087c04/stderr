@@ -1,0 +1,9 @@
+error: could not copy "/mnt/c/Void/JAVA/oms-parent/rust-services/oms-risk-service/target/debug/build/lock_api-c5876e0216087c04/out/autocfg_399c200540471bdf_0.autocfg_399c200540471bdf_0.37f90e0bf7a5cc3a-cgu.0.rcgu.ll" to "/mnt/c/Void/JAVA/oms-parent/rust-services/oms-risk-service/target/debug/build/lock_api-c5876e0216087c04/out/autocfg_399c200540471bdf_0.ll": Operation not permitted (os error 1)
+
+error: aborting due to 1 previous error
+
+error: could not copy "/mnt/c/Void/JAVA/oms-parent/rust-services/oms-risk-service/target/debug/build/lock_api-c5876e0216087c04/out/autocfg_399c200540471bdf_1.autocfg_399c200540471bdf_1.aa64035ad82bd833-cgu.0.rcgu.ll" to "/mnt/c/Void/JAVA/oms-parent/rust-services/oms-risk-service/target/debug/build/lock_api-c5876e0216087c04/out/autocfg_399c200540471bdf_1.ll": Operation not permitted (os error 1)
+
+error: aborting due to 1 previous error
+
+warning: autocfg could not probe for `std`
