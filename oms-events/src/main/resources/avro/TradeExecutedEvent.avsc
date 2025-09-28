@@ -3,10 +3,10 @@
   "name": "TradeExecutedEvent",
   "namespace": "com.adarsh.oms.oms_events.avro",
   "fields": [
-    { "name": "tradeId", "type": "long" },
-    { "name": "orderId", "type": "long" },
+    { "name": "tradeId", "type": "string" },
+    { "name": "buyOrderId", "type": "string" },
+    { "name": "sellOrderId", "type": "string" },
     { "name": "symbol", "type": "string" },
-    { "name": "side", "type": "string" },
     { "name": "quantity", "type": "int" },
     { "name": "price", "type": "double" },
     { "name": "timestamp", "type": "long" }

@@ -1,0 +1,12 @@
+# Logs
+logs/
+*.log
+
+# Build
+target/
+out/
+
+# IDE
+.idea/
+*.iml
+.vscode/

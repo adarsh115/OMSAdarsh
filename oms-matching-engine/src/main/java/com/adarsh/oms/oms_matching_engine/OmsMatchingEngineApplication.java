@@ -1,16 +1,14 @@
-package com.adarsh.oms.oms_market_data;
+package com.adarsh.oms.oms_matching_engine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@EnableScheduling
-public class OmsMarketDataApplication {
+public class OmsMatchingEngineApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OmsMarketDataApplication.class, args);
+		SpringApplication.run(OmsMatchingEngineApplication.class, args);
 	}
 
 }

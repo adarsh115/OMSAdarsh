@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "MarketTickEvent",
+  "namespace": "com.adarsh.oms.oms_events.avro",
+  "fields": [
+    { "name": "symbol", "type": "string" },
+    { "name": "price", "type": "double" },
+    { "name": "timestamp", "type": "string" },
+    { "name": "source", "type": "string" },
+    { "name": "type", "type": { "type": "enum", "name": "TickType", "symbols": ["LAST_TRADE", "BID", "ASK", "MIDPOINT"] } }
+  ]
+}

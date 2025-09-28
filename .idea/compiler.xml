@@ -17,6 +17,12 @@
         <module name="oms-admin-service" />
         <module name="oms-api-gateway" />
         <module name="oms-core" />
+        <module name="oms-matching-engine" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
   </component>

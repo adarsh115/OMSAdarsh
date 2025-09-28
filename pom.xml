@@ -15,6 +15,7 @@
         <module>oms-order-service</module>
         <module>oms-market-data</module>
         <module>oms-risk-service</module>
+        <module>oms-matching-engine</module>
         <module>oms-admin-service</module>
         <module>oms-api-gateway</module>
     </modules>
