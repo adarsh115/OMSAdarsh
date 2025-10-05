@@ -1,0 +1,15 @@
+services:
+  oms-order-service:
+    build: ../../oms-order-service
+    ports:
+      - "8182:8080"
+    networks:
+      - oms-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      SPRING_KAFKA_PROPERTIES_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+
+networks:
+  oms-net:
+    external: true
