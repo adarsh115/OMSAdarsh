@@ -10,6 +10,50 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
       SPRING_KAFKA_PROPERTIES_SCHEMA_REGISTRY_URL: http://schema-registry:8081
 
+  oms-risk-service:
+    build: ../../oms-risk-service
+    ports:
+      - "8184:8082"
+    networks:
+      - oms-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      SPRING_KAFKA_PROPERTIES_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+
+  oms-market-data:
+    build: ../../oms-market-data
+    ports:
+      - "8186:8084"
+    networks:
+      - oms-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      SPRING_KAFKA_PROPERTIES_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+
+  oms-matching-engine:
+    build: ../../oms-matching-engine
+    ports:
+      - "8188:8086"
+    networks:
+      - oms-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      SPRING_KAFKA_PROPERTIES_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+
+  oms-core:
+    build: ../../oms-core
+    ports:
+      - "8190:8088"
+    networks:
+      - oms-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      SPRING_KAFKA_PROPERTIES_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+
 networks:
   oms-net:
     external: true
